@@ -29,7 +29,7 @@ module Analytical
 
       def identify(id, *args)
         data = args.first || {}
-        identity = "_kmq.push([\"identify\", \"#{id}\"]);"
+        "_kmq.push([\"identify\", \"#{id}\"]);"
       end
 
       def event(name, *args)
